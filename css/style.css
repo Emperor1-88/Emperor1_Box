@@ -1,0 +1,292 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{box-sizing: border-box; font-family: 'Poppins', sans-serif; font-weight: 300;}
+html, body{margin: 0; padding: 0;}
+h1, h2,h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+/*------------------------슬라이드 베너------------------------*/
+.slide{
+    width: 100%; height: 820px;
+    background-color: #faa;
+    background-image: url(../img/main_slide02.jpg);
+    display: flex;
+    align-items: flex-end;
+}
+.slide .bt{
+    width: 1180px; height: 40px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+.slide .bt .bt_icon1{width: 35px; height: 35px; margin-right: 8px; cursor: pointer;}
+.slide .bt .bt_icon2{width: 35px; height: 35px; margin-right: 8px; cursor: pointer;}
+.slide .bt .bt_icon3{width: 35px; height: 35px; margin-right: 8px; cursor: pointer;}
+.slide .bt .bt_icon1{background-image: url(../img/btn_left.png);}
+.slide .bt .bt_icon2{background-image: url(../img/btn_right.png);}
+.slide .bt .bt_icon3{background-image: url(../img/btn_stop.png);}
+/*------------------------슬라이드 베너------------------------*/
+
+
+/*---------------------------Our Business--------------------------*/
+.business{
+    width: 100%; height: 100%;
+}
+.business .box{
+    width: 1200px; height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.business .box .cont1{
+    width: 35px; height: 80px;
+    margin: 0 auto;
+    background-image: url(../img/slide_bottom_icon.png);
+    background-repeat: no-repeat;
+}
+.business .box .cont2{
+    text-align: center;
+    margin-top: 50px;
+}
+.business .box .cont2 h3{font-size: 40px; color: #555;}
+.business .box .cont2 p{font-size: 14px;}
+
+.business .box .cont3{
+    width: 100%; height: 300px;
+    margin-top: 50px;
+    display:flex;
+}
+.business .box .cont3 .item{margin-right: 20px;}
+
+.business .box .cont3 .item .icon{
+    width: 280px; height: 175px;
+    background-size: 130px 130px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.business .box .cont3 .item #icon1{background-image: url(../img/main_icon01_off.png);}
+.business .box .cont3 .item #icon2{background-image: url(../img/main_icon02_off.png);}
+.business .box .cont3 .item #icon3{background-image: url(../img/main_icon03_off.png);}
+.business .box .cont3 .item #icon4{background-image: url(../img/main_icon04_off.png);}
+
+.business .box .cont3 .item #icon1:hover{background-image: url(../img/main_icon01_on.png); cursor: pointer;}
+.business .box .cont3 .item #icon2:hover{background-image: url(../img/main_icon02_on.png); cursor: pointer;}
+.business .box .cont3 .item #icon3:hover{background-image: url(../img/main_icon03_on.png); cursor: pointer;}
+.business .box .cont3 .item #icon4:hover{background-image: url(../img/main_icon04_on.png); cursor: pointer;}
+.business .box .cont3 .item .icon:hover{background-size: 150px 150px;}
+
+.business .box .cont3 .item .text{
+    width: 280px; height: 110px;
+    background-color: #fff;
+    margin-top: 30px;
+    font-size: 14px;
+}
+/*---------------------------Our Business--------------------------*/
+
+
+
+
+
+/*----------------------------중간 이미지---------------------------*/
+.more_img{
+    width: 100%; height: 480px;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.more_img .box{
+    width: 100%; height: 100%; 
+    background-repeat: no-repeat; 
+    background-size: 900px 500px;
+    background-position: 50% 50%;
+}
+.more_img .box:nth-child(1){background-image: url(../img/business_img01.jpg);}
+.more_img .box:nth-child(2){background-image: url(../img/business_img02.jpg);}
+.more_img .box:nth-child(3){background-image: url(../img/business_img03.jpg);}
+
+.more_img .box .over{
+    width: 100%; height: 100%;
+    background-color: #000;
+    background-image: url();
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more_img .box .over .text{
+    width: 60px; height: 80px;
+    background-image: url(../img/business_over_btn.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    color: #f47321;
+}
+.more_img .box .over .text p{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 60px;
+}
+.more_img .box .over:hover{
+    opacity: 0.8;
+}
+/*----------------------------중간 이미지---------------------------*/
+
+
+
+
+
+/*--------------------------한화 스토리------------------------*/
+.story{
+    width: 100%; height: 650px;
+}
+.story .box{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.story .box .title{
+    text-align: center;
+    padding: 70px;
+}
+.story .box .news{
+    width: 100%; height: 340px;
+    display: flex;
+}
+.story .box .news .cont{padding-right: 20px;}
+.story .box .news .cont .text{width: 380px; height: 100px; margin-top: 10px;}
+.story .box .news .cont .text p{margin-top: 10px;}
+.story .box .news .cont .img{width: 380px; height: 220px;}
+.story .box .news .cont #img1{background-image: url(../img/story_img01.jpg);}
+.story .box .news .cont #img2{background-image: url(../img/story_img02.jpg);}
+.story .box .news .cont #img3{background-image: url(../img/story_img03.jpg);}
+
+
+/*--------------------------한화 스토리------------------------*/
+
+
+
+
+
+/*----------------------------하단 베너---------------------------*/
+.banner{
+    width: 100%; height: 300px;
+    background-color: #4ff;
+    background-image: url(../img/banner_img.jpg);
+    background-size: 100% 100%;
+    color: #fff;
+    
+}
+.banner .box{
+    width: 350px; height: 180px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.banner .box .box1{
+    width: 200px; height: 45px;
+    background-image: url(../img/banner_logo.png);
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.banner .box .box2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+.banner .box .box3{
+    width: 125px; height: 35px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*----------------------------하단 베너---------------------------*/
+
+
+
+
+/*----------------------------하단 콘텐츠---------------------------*/
+.content{
+    width: 100%; height: 540px;
+}
+.content .box{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    padding: 110px 0;
+    display: flex;
+}
+.content .box .cont{
+    width: 100%; height: 100%;
+    background-color: #fff;    
+    margin: 0 10px;
+}
+.content .box .cont .img{
+    width: 380px; height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.content .box .cont .img .text .line{
+    width: 25px; height: 5px;
+    border-bottom: 1px solid #fff;
+}
+.content .box .cont .img .line{
+    width: 25px; height: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.content .box .cont .img .text h2{margin: 10px 0;}
+.content .box .cont .img .text h2{margin-bottom: 70px;}
+.content .box .cont .img .icon{
+    width: 143px; height: 143px;
+    background-image: url(../img/contribution_logo.png);
+}
+
+.content .box .cont .img .circle{
+    width: 160px; height: 170px;
+    margin: 0 10px;
+    color: #555;
+    text-align: center;
+}
+.content .box .cont .img .circle h3{font-style: 18px; font-weight: bold; margin-top: 15px;}
+.content .box .cont .img .circle p{font-style: 14px;}
+.content .box .cont .img .circle .circle_img{width: 100px; height: 100px; margin: 0 auto;}
+
+.content .box .cont .bt{
+    width: 100%; height: 50px;
+    background: #faa;
+    margin-top: 30px;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    background: url(../img/moer_btn.png) no-repeat 360px center;
+    cursor: pointer;
+}
+/*----------------------------하단 콘텐츠---------------------------*/
+
+@media(max-width:1023px){
+
+.slide .bt{ margin: 30px;}
+    /*---------------------------Our Business--------------------------*/
+
+.business .box .cont3 .item:nth-child(3){float: left;}
+/*---------------------------Our Business--------------------------*/
+
+    
+
+
+
+
+
+
+}
+@media(max-width:767px){
+
+}
